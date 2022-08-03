@@ -73,6 +73,68 @@
 			"name": "Yunki",
 			"item": [
 				{
+					"name": "Redis",
+					"item": [
+						{
+							"name": "localhost:8082/yunkis Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8088/yunkis",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"yunkis"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8082/yunkis Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "   {\r\n    \"id\":1,\r\n    \"userId\" : 1,\r\n    \"secondUserId\": 2,\r\n    \"payMode\":\"yunki\",\r\n    \"amount\":90,\r\n    \"amountBootcoin\": 3,\r\n    \"phone\":\"phone\",\r\n    \"email\":\"email\"\r\n   } ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8088/yunkis",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"yunkis"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "localhost:8082/yunkis",
 					"request": {
 						"method": "POST",
