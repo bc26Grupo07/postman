@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "0e562294-9cb6-4094-8b6c-f74fcb05fb98",
+		"name": "Yanki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Bootcoin",
+			"item": [
+				{
+					"name": "localhost:8080/bootcoins",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"purchase\": 19.2,\r\n    \"sale\": 20.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/bootcoins",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bootcoins"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "localhost:8081/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"user\",\r\n    \"document\":\"98745612\",\r\n    \"phone\":\"987563258\",\r\n    \"email\":\"user@user.com\",\r\n    \"amount\":250,\r\n    \"purse\":20\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Yunki",
+			"item": [
+				{
+					"name": "localhost:8082/yunkis",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n    \"id\":1,\r\n    \"userId\" : 1,\r\n    \"secondUserId\": 2,\r\n    \"payMode\":\"yunki\",\r\n    \"amount\":90,\r\n    \"amountBootcoin\": 3,\r\n    \"phone\":\"phone\",\r\n    \"email\":\"email\"\r\n   } ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/yunkis",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"yunkis"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
